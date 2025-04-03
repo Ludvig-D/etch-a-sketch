@@ -7,9 +7,8 @@
 body {
   height: 100vh;
   display: flex;
-  justify-content: center;
   align-items: center;
-  background-color: grey;
+  background-color: #264653;
   flex-direction: column;
 }
 
@@ -26,4 +25,31 @@ body {
   background-color: lightgrey;
   flex: auto;
   border: 0.5px solid black;
+}
+
+.options {
+  padding: 10px;
+  display: flex;
+  gap: 60px;
+}
+
+.options button {
+  background-color: #2a9d8f;
+  padding: 5px 15px;
+  border-radius: 6px;
+  border: none;
+  color: #fff;
+  font-family: sans-serif;
+  font-weight: bold;
+  width: 10em;
+}
+
+h1 {
+  color: #fff;
+  font-family: sans-serif;
+  font-weight: 900;
+  background-color: #2a9d8f;
+  border-radius: 6px;
+  padding: 5px 25px;
+  margin-top: 20px;
 }

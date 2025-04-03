@@ -1,5 +1,6 @@
 const container = document.querySelector('.container');
 const changeSize = document.querySelector('.changeSize');
+const resetButton = document.querySelector('.resetButton');
 
 let size = 16;
 
@@ -25,7 +26,7 @@ const flexGrid = (width) => {
   }
 };
 
-flexGrid(16);
+flexGrid(size);
 
 changeSize.addEventListener('click', () => {
   size = prompt('Choose between 16 - 100');
@@ -37,4 +38,11 @@ changeSize.addEventListener('click', () => {
   } else {
     alert('It has to be a number between 16 and 100!!!');
   }
+});
+
+resetButton.addEventListener('click', () => {
+  while (container.firstChild) {
+    container.removeChild(container.firstChild);
+  }
+  flexGrid(size);
 });
