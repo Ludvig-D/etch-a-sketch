@@ -9,11 +9,12 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: gray;
+  background-color: grey;
+  flex-direction: column;
 }
 
 .container {
-  background-color: lightgrey;
+  background-color: black;
   width: 600px;
   height: 600px;
   border: 4px solid black;
@@ -22,7 +23,7 @@ body {
 }
 
 .divs {
-  background-color: rebeccapurple;
+  background-color: lightgrey;
   flex: auto;
-  border: 1px solid black;
+  border: 0.5px solid black;
 }
